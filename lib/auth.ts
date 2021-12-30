@@ -33,6 +33,7 @@ export const validateRoute = (handler) => {
   };
 };
 
+// handle token expiration
 export const validateToken = (token) => {
   const user = jwt.verify(token, "secret");
   return user;
